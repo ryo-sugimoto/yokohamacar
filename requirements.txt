@@ -7,6 +7,6 @@ psycopg2==2.8.5
 pytz==2020.1
 sqlparse==0.3.1
 whitenoise==5.2.0
-django-environ
-django-summernote
+django-environ==0.4.5
+django-summernote==0.8.11.6
 payjp
