@@ -1,0 +1,91 @@
+{% extends "master.html" %}
+
+{% load static %}
+
+{% block main %}
+<div class="grid-layout">
+    <div class="grid-layout__item grid-layout__item--s1-m1-l2">
+        <ul class="talk">
+            <li class="talk__message talk__message--left">
+                <div class="message">
+                    <img class="message__picture message__picture--left"
+                        src="{% static '/img/message/woman_trouble.png' %}">
+                    <div class="message__balloon message__balloon--left">
+                        <p>
+                            車に傷をつけてしまったよ<br>
+                            どうしよぉー<br>
+                            車の修理高いんだよね～
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="talk__message talk__message--right">
+                <div class="message">
+                    <img class="message__picture message__picture--right"
+                        src="{% static '/img/message/man_confidence.png' %}">
+                    <div class="message__balloon message__balloon--right">
+                        <p>
+                            車には付着の傷とエグれている傷の2コあるのだ！！<br>
+                            付着のキズなら3000円でなおるよ！<br>
+                            お任せください！
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="talk__message talk__message--left">
+                <div class="message">
+                    <img class="message__picture message__picture--left"
+                        src="{% static '/img/message/woman_energy.png' %}">
+                    <div class="message__balloon message__balloon--left">
+                        <p>
+                            ありがとうございます。<br>
+                            本当に焦りました。<br>
+                            助かります。
+                        </p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="grid-layout__item grid-layout__item--s1-m1-l2">
+        <ul class="talk">
+            <li class="talk__message talk__message--left">
+                <div class="message">
+                    <img class="message__picture message__picture--left"
+                        src="{% static '/img/message/woman_trouble_2.png' %}">
+                    <div class="message__balloon message__balloon--left">
+                        <p>
+                            新車を買ったけどコーティングいくらくらいかな？<br>
+                            安ければいいけど、どんなのがあるのかな？
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="talk__message talk__message--right">
+                <div class="message">
+                    <img class="message__picture message__picture--right"
+                        src="{% static '/img/message/man_confidence.png' %}">
+                    <div class="message__balloon message__balloon--right">
+                        <p>
+                            新車のコーティングは下地を磨くのみでいけるので、この<a href="#">料金</a>でいけるよォー<br>
+                            中古車でもコーティングはこの<a href="#">価格</a>でいけるよォー
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li class="talk__message talk__message--left">
+                <div class="message">
+                    <img class="message__picture message__picture--left"
+                        src="{% static '/img/message/woman_energy_2.png' %}">
+                    <div class="message__balloon message__balloon--left">
+                        <p>
+                            いろんな業者さんをみたけどこの会社に頼んでよかったよォー<br>
+                            出張で来てくれて無料ですばやく短い時間で終わらせてくれた！
+                        </p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+{% endblock %}

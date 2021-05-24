@@ -1,0 +1,25 @@
+/* =========================================================
+ リスト（連番）
+========================================================= */
+
+/* リスト全体(ul,ol)
+-----------------------------------------------*/
+.sequence-list {
+    counter-reset: item;
+    list-style: none;
+}
+
+/* リストアイテム(li)
+-----------------------------------------------*/
+.sequence-list__item {
+    margin: .8em 0;
+}
+.sequence-list__item::before {
+    counter-increment: item;
+    content: counter(item)'. ';
+}
+
+/* ----- 文字大き目 ----- */
+.sequence-list__item--large {
+    font-size: 1.2em;
+}

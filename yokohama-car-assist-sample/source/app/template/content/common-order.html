@@ -1,0 +1,125 @@
+{% extends "master.html" %}
+
+{% load static %}
+
+{% block main %}
+<div class="grid-layout">
+    <div class="grid-layout__item grid-layout__item--s1-m1-l2">
+        <article class="article">
+            <h2 class="article__heading article__heading--2">車屋さんからこんなご注文が...</h2>
+            <ul class="talk">
+                <li class="talk__message talk__message--left">
+                    <div class="message">
+                        <img class="message__picture message__picture--left" src="{% static '/img/message/man_trouble.png' %}">
+                        <div class="message__balloon message__balloon--left">
+                            <p>
+                                値段は？<br>
+                                何時間かかるの？<br>
+                                こんな車大丈夫？
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="talk__message talk__message--right">
+                    <div class="message">
+                        <img class="message__picture message__picture--right" src="{% static '/img/message/man_confidence.png' %}">
+                        <div class="message__balloon message__balloon--right">
+                            <p>
+                                お任せください<br>
+                                多種多彩なので車により値段が違いますが、この中から固定金額でOK<br>
+                                時間は35~7時間くらいですね<br>
+                                セダン・コンパクトカー・ミニバン) OK<br>
+                                <a href="#">料金</a>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </article>
+    </div>
+    <div class="grid-layout__item grid-layout__item--s1-m1-l2">
+        <article class="article">
+            <h2 class="article__heading article__heading--2">工事現場の方</h2>
+            <ul class="talk">
+                <li class="talk__message talk__message--left">
+                    <div class="message">
+                        <img class="message__picture message__picture--left" src="{% static '/img/message/man_trouble_2.png' %}">
+                        <div class="message__balloon message__balloon--left">
+                            <p>
+                                隣の車にペンキがかかっちゃった
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="talk__message talk__message--right">
+                    <div class="message">
+                        <img class="message__picture message__picture--right" src="{% static '/img/message/man_trouble_3.png' %}">
+                        <div class="message__balloon message__balloon--right message__balloon--lightblue">
+                            <p>
+                                通気口から埃が出て車がめっちゃ汚れてる
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="talk__message talk__message--left">
+                    <div class="message">
+                        <img class="message__picture message__picture--left" src="{% static '/img/message/man_trouble_4.png' %}">
+                        <div class="message__balloon message__balloon--left">
+                            <p>
+                                近くの家の車を汚してしまったよォー<br>
+                                どーしよォー
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </article>
+    </div>
+    <div class="grid-layout__item grid-layout__item--s1-m1-l2">
+        <article class="article">
+            <h2 class="article__heading article__heading--2">一般の会社さんから個人のお客様からの発注</h2>
+            <ul class="talk">
+                <li class="talk__message talk__message--left">
+                    <div class="message">
+                        <img class="message__picture message__picture--left" src="{% static '/img/message/man_worried.png' %}">
+                        <div class="message__balloon message__balloon--left">
+                            <p>
+                                家に来て洗車してくれないかなぁ～<br>
+                                週末車つかうんだよなぁー
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="talk__message talk__message--right">
+                    <div class="message">
+                        <img class="message__picture message__picture--right" src="{% static '/img/message/man_confidence.png' %}">
+                        <div class="message__balloon message__balloon--right">
+                            <p>
+                                お任せください<br>
+                                外装洗車・内装掃除機・ホイル・タイヤ←すべてやって一律6000円 + 税<br>
+                                出張費無料（地域による）<br>
+                                安いよォー<br>
+                                ガソリンスタンドとたいしてかわらないし
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </article>
+    </div>
+    <div class="grid-layout__item grid-layout__item--s1-m1-l2">
+        <article class="article">
+            <div class="article__arrow article__arrow--bottom"></div>
+            <p class="article__paragraph article__paragraph--large article__paragraph--center">すべてお任せ下さい。この悩みすべて</p>
+            <p class="article__paragraph article__paragraph--xlarge article__paragraph--center">お受けします。</p>
+            <ol class="sequence-list article__sequence-list article__sequence-list--center">
+                <li class="sequence-list__item sequence-list__item--large">リアルタイムで動きます</li>
+                <li class="sequence-list__item sequence-list__item--large">現場施工</li>
+                <li class="sequence-list__item sequence-list__item--large">関東エリア出張可</li>
+                <li class="sequence-list__item sequence-list__item--large">すぐ作業</li>
+                <li class="sequence-list__item sequence-list__item--large">お客様と商談OK クレーム処理</li>
+            </ol>
+        </article>
+    </div>
+</div>
+{% endblock %}

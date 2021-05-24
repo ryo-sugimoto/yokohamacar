@@ -1,0 +1,35 @@
+{% extends "master.html" %}
+
+{% load static %}
+
+{% block main %}
+
+<form id="mail-magazine-form" class="mail-magazine" method="POST">
+
+    {% csrf_token %}
+
+    <h1 class="mail-magazine__head">メルマガ会員登録</h1>
+
+    <div class="vertical-form-group">
+        <p class="vertical-form-group__label">お名前</p>
+        {{ form.name }}
+        {% for error in form.name.errors %}
+            <p class="mail-magazine__error-message">{{ error }}</p>
+        {% endfor %}
+    </div>
+
+    <div class="vertical-form-group">
+        <p class="vertical-form-group__label">Eメール</p>
+        {{ form.mail_address }}
+        {% for error in form.mail_address.errors %}
+            <p class="mail-magazine__error-message">{{ error }}</p>
+        {% endfor %}
+    </div>
+
+    <div class="vertical-form-group">
+        <input type="submit" class="vertical-form-group__button" value="送信" />
+    </div>
+    
+</form>
+
+{% endblock %}

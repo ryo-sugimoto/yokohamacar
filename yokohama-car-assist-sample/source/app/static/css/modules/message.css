@@ -1,0 +1,89 @@
+/* =========================================================
+ メッセージ風デザイン
+========================================================= */
+
+
+/* 全体
+-----------------------------------------------*/
+.message {
+    display: flex;
+}
+
+/* 送信者画像
+-----------------------------------------------*/
+.message__picture {
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+}
+
+/* ----- 右 ----- */
+.message__picture--right {
+    order: 1;
+}
+
+/* ----- 左 ----- */
+.message__picture--left {
+    order: 0;
+}
+
+
+/* 吹き出し
+-----------------------------------------------*/
+.message__balloon {
+    display: grid;
+    place-items: center;
+    position: relative;
+    padding: 1em;
+    line-height: 1.3em;
+    border-radius: 1em;
+}
+
+/* ----- 青色 ----- */
+.message__balloon--lightblue {
+    background-color: lightblue !important;
+}
+.message__balloon--lightblue::before {
+    border-left: .9em solid lightblue !important;
+}
+
+/* ----- 黄色 ----- */
+.message__balloon--yellow {
+    background-color: #F1C40F !important;
+}
+.message__balloon--yellow::before {
+    border-left: .9em solid #F1C40F !important;
+}
+
+/* ----- 右 （デフォルト） ----- */
+.message__balloon--right {
+    order: 0;
+    margin: 0 1em 0 0;
+    background-color: #F1C40F;
+}
+.message__balloon--right::before {
+    content: '';
+    position: absolute;
+    right: -.5em;
+    top: 2.1em;
+    border-left: .9em solid #F1C40F;
+    border-top: .9em solid transparent;
+    border-bottom: .9em solid transparent;
+}
+
+/* ----- 左 （デフォルト） ----- */
+.message__balloon--left {
+    order: 1;
+    margin: 0 0 0 1em;
+    background-color: lightblue;
+}
+.message__balloon--left::before{
+    content: '';
+    position: absolute;
+    left: -.5em;
+    top: 2.1em;
+    border-right: .9em solid lightblue;
+    border-top: .9em solid transparent;
+    border-bottom: .9em solid transparent;
+}
+

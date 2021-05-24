@@ -1,0 +1,43 @@
+{% extends "master.html" %}
+
+{% load static %}
+
+{% block main %}
+
+<form id="contact-form" class="contact" method="POST">
+
+    {% csrf_token %}
+
+    <h1 class="contact__head">お問い合わせ</h1>
+
+    <div class="vertical-form-group">
+        <p class="vertical-form-group__label">お名前</p>
+        {{ form.name }}
+        {% for error in form.name.errors %}
+            <p class="contact__error-message">{{ error }}</p>
+        {% endfor %}
+    </div>
+
+    <div class="vertical-form-group">
+        <p class="vertical-form-group__label">Eメール</p>
+        {{ form.mail_address }}
+        {% for error in form.mail_address.errors %}
+            <p class="contact__error-message">{{ error }}</p>
+        {% endfor %}
+    </div>
+
+    <div class="vertical-form-group">
+        <p class="vertical-form-group__label">お問い合わせ内容</p>
+        {{ form.content }}
+        {% for error in form.content.errors %}
+            <p class="contact__error-message">{{ error }}</p>
+        {% endfor %}
+    </div>
+
+    <div class="vertical-form-group">
+        <input type="submit" class="vertical-form-group__button" value="送信" />
+    </div>
+    
+</form>
+
+{% endblock %}

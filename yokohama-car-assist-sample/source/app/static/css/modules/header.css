@@ -1,0 +1,48 @@
+/* =========================================================
+ ヘッダー
+========================================================= */
+
+
+/* ~ 479px
+-----------------------------------------------*/
+@media screen and (max-width:479px) {
+
+    /* ヘッダー画像
+    -----------------------------------------------*/
+    .header__picture {
+        background-image: url(../../img/header/sp.png);
+        height: 310px;
+    }
+}
+
+/* 480px ~ 960px
+-----------------------------------------------*/
+@media screen and (min-width:480px) and (max-width: 960px) {
+
+    /* ヘッダー画像
+    -----------------------------------------------*/
+    .header__picture {
+        background-image: url(../../img/header/sp.png);
+        height: 480px;
+    }
+}
+
+/* 961px ~
+-----------------------------------------------*/
+@media screen and (min-width: 961px) {
+
+    /* ヘッダー画像
+    -----------------------------------------------*/
+    .header__picture {
+        background-image: url(../../img/header/pc.png);
+        height: 320px;
+    }
+}
+
+/* ヘッダー画像　全ブレイクポイント共通
+-----------------------------------------------*/
+.header__picture {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}

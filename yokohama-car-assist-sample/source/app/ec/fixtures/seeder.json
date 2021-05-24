@@ -1,0 +1,20 @@
+[
+    {
+        "model": "ec.tax",
+        "fields": {
+            "rate": 1.1,
+            "description": "標準税率",
+            "created_at": "2019-10-01T00:00:00.000Z",
+            "updated_at": "2019-10-01T00:00:00.000Z"
+        }
+    },
+    {
+        "model": "ec.tax",
+        "fields": {
+            "rate": 1.08,
+            "description": "軽減税率",
+            "created_at": "2019-10-01T00:00:00.000Z",
+            "updated_at": "2019-10-01T00:00:00.000Z"
+        }
+    }
+]

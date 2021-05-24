@@ -1,0 +1,53 @@
+{% extends "master.html" %}
+
+{% load static humanize %}
+
+{% block main %}
+
+<form class="product grid-layout" method="GET" action="{% url 'ec:order' product.id %}">
+
+    {% csrf_token %}
+
+    <input type="hidden" name="product" value="{{ product.id }}" />
+
+    <div class="product-images grid-layout__item grid-layout__item--s1-m1-l2">
+        {% for image in product_image %}
+            <img class="product-images__image" src="{{ image }}">
+        {% endfor %}
+    </div>
+
+    <div class="product__detail grid-layout__item grid-layout__item--s1-m1-l2">
+    
+        <div class="vertical-form-group">
+            <p class="product__name">{{ product.name }}</p>
+        </div>
+    
+        <div class="vertical-form-group">
+            <p class="product__price">&yen {{ product.price | intcomma }} (税込み)</p>
+        </div>
+
+        <div class="vertical-form-group">
+            <pre class="product__description">{{ product.description }}</pre>
+        </div>
+
+        {% if product_option is not None %}
+            <div class="horizontal-form-group">
+                <p class="product__option-label">オプション :</p>
+                <select name="product_option">
+                    {% for option in product_option %}
+                        <option value="{{ option.id }}">{{ option.name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        {% endif %}
+
+        <div class="vertical-form-group">
+            <input type="submit" class="vertical-form-group__button" value="購入" />
+        </div>
+
+    </div>
+
+</form>
+
+{% endblock %}
+

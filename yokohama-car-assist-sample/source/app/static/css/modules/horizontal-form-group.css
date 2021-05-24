@@ -1,0 +1,18 @@
+.horizontal-form-group {
+    margin: 1em 0 1em 0;
+    display: flex;
+    justify-content: center;
+}
+
+.horizontal-form-group__button {
+    background-color: #F1C40F;
+    color: white;
+    border: none;
+    padding: .5em;
+    width: 5em;
+    font-weight: bold;
+    font-size: 1.1em;
+    letter-spacing: .1em;
+    border-radius: 5px;
+    -webkit-appearance: none;
+}

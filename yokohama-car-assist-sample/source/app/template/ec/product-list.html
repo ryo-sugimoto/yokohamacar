@@ -1,0 +1,24 @@
+{% extends "master.html" %}
+
+{% load static humanize %}
+
+{% block main %}
+<ul class="product-list">
+    {% for product in products %}
+    <li class="product-item">
+        <img src="{{ product.product_image }}" class="product-item__img">
+        <p class="product-item__name">{{ product.name }}</p>
+        <p class="product-item__price">&yen {{ product.price | intcomma }}</p>
+        <p class="product-item__description">
+            {{ product.description }}
+        </p>
+        <div class="product-item__button-element">
+            <button class="product-item__button" onclick="location.href='{% url 'ec:product' product.id %}'">決定</button>
+        </div>
+    </li>
+    {% empty %}
+    <p>現在商品がありません。</p>
+    {% endfor %}
+</ul>
+{% endblock %}
+

@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+
+    <link rel="stylesheet" href="{% static '/css/yokohama-car-assist.css' %}" />
+</head>
+<body>
+    <!-- header -->
+    {% include 'header.html' %}
+
+    <!-- navigator -->
+    {% include 'navigator.html' %}
+
+    <!-- main -->
+    <main>
+        {% block main %}
+            {{ main }}
+        {% endblock %}
+    </main>
+
+    <!-- footer -->
+    {% include 'footer.html' %}
+</body>
+</html>

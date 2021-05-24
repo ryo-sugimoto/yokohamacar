@@ -1,0 +1,61 @@
+{% extends "master.html" %}
+
+{% load static humanize %}
+
+
+{% block main %}
+
+<form method="POST">
+
+    <h1 class="product__head">購入者情報入力</h1>
+
+    {% csrf_token %}
+
+    {{ form.product }}
+    {{ form.product_option }}
+
+    <div class="vertical-form-group">
+        <p class="product__label">{{ form.buyer_name.label }}</p>
+        {{ form.buyer_name }}
+        {% for error in form.buyer_name.errors %}
+            <p class="product__error-message">{{ error }}</p>
+        {% endfor %}
+    </div>
+
+    <div class="vertical-form-group">
+        <p class="product__label">{{ form.buyer_address.label }}</p>
+        {{ form.buyer_address }}
+        {% for error in form.buyer_address.errors %}
+            <p class="product__error-message">{{ error }}</p>
+        {% endfor %}
+    </div>
+
+    <div class="vertical-form-group">
+        <p class="product__label">{{ form.buyer_zip_code.label }}</p>
+        {{ form.buyer_zip_code }}
+        {% for error in form.buyer_zip_code.errors %}
+            <p class="product__error-message">{{ error }}</p>
+        {% endfor %}
+    </div>
+
+    <div class="vertical-form-group">
+        <p class="product__label">{{ form.buyer_tel.label }}</p>
+        {{ form.buyer_tel }}
+        {% for error in form.buyer_tel.errors %}
+            <p class="product__error-message">{{ error }}</p>
+        {% endfor %}
+    </div>
+
+    <div class="vertical-form-group">
+        <p class="product__label">{{ form.buyer_email.label }}</p>
+        {{ form.buyer_email }}
+        {% for error in form.buyer_email.errors %}
+            <p class="product__error-message">{{ error }}</p>
+        {% endfor %}
+    </div>
+
+    <script type="text/javascript" src="https://checkout.pay.jp" data-text="カード情報を入力する" class="payjp-button" data-key="{{ payjp_public_key }}"></script>    
+</form>
+
+{% endblock %}
+

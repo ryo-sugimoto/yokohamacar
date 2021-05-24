@@ -1,0 +1,35 @@
+.vertical-form-group {
+    margin: 1em 0 1em 0;
+}
+
+.vertical-form-group__label {
+    font-weight: bold;
+    margin: .5em 0;
+}
+
+.vertical-form-group__text {
+    padding: .5em;
+    font-size: 1.05em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.vertical-form-group__textarea {
+    padding: .5em;
+    font-size: 1.05em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.vertical-form-group__button {
+    background-color: #F1C40F;
+    color: white;
+    border: none;
+    padding: .5em;
+    width: 5em;
+    font-weight: bold;
+    font-size: 1.1em;
+    letter-spacing: .1em;
+    border-radius: 5px;
+    -webkit-appearance: none;
+}

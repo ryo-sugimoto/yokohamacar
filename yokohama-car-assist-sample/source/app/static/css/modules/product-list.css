@@ -1,0 +1,12 @@
+
+.product-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-list__head {
+    font-size: 1.5em;
+}
+

@@ -1,0 +1,25 @@
+/* =========================================================
+ 対話風レイアウト
+========================================================= */
+
+/* メッセージ
+-----------------------------------------------*/
+.talk__message {
+    display: flex;
+    padding: 1em;
+}
+
+/* ----- 真ん中揃え ----- */
+.talk__message--center {
+    justify-content: center;
+}
+
+/* ----- 左揃え ----- */
+.talk__message--left {
+    justify-content: flex-start;
+}
+
+/* ----- 右揃え ----- */
+.talk__message--right {
+    justify-content: flex-end;
+}

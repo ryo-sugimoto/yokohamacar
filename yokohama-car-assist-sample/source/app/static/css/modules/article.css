@@ -1,0 +1,104 @@
+/* =========================================================
+ 記事ページ
+========================================================= */
+
+
+/* ページ全体
+-----------------------------------------------*/
+.article {
+    display: grid;
+    gap: 2em;
+    color: #4d4d4d;
+    padding: .5em;
+}
+
+
+/* hタグ
+-----------------------------------------------*/
+
+/* ----- hタグ共通 ----- */
+.article__heading {
+    font-weight: bold;
+}
+
+/* ----- h1 ----- */
+.article__heading--1 {
+    font-size: 1.6em;
+    padding: 0 0 .3em 0;
+    border-bottom: solid .15em #F1C40F;
+}
+
+/* ----- h2 ----- */
+.article__heading--2 {
+    font-size: 1.3em;
+    padding: 0.5em;
+    background: #fff5cfb7;
+    border-left: solid .3em #F1C40F;
+    border-bottom: solid .05em #F1C40F;
+}
+
+
+/* pタグ
+-----------------------------------------------*/
+
+/* ----- pタグ共通 ----- */
+.article__paragraph {
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+/* ----- 文字中央揃え ----- */
+.article__paragraph--center {
+    text-align: center;
+}
+
+/* ----- 文字大きめ ----- */
+.article__paragraph--large {
+    font-size: 1.1em;
+}
+
+/* ----- 文字かなり大きめ ----- */
+.article__paragraph--xlarge {
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+
+/* 矢印
+-----------------------------------------------*/
+.article__arrow {
+    width: 6em;
+    height: 6em;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+/* ----- 上矢印 ----- */
+.article__arrow--top {
+    background-image: url(../../img/parts/arrow_top.png);
+}
+
+/* ----- 左矢印 ----- */
+.article__arrow--left {
+    background-image: url(../../img/parts/arrow_left.png);
+}
+
+/* ----- 右矢印 ----- */
+.article__arrow--right {
+    background-image: url(../../img/parts/arrow_right.png);
+}
+
+/* ----- 下矢印 ----- */
+.article__arrow--bottom {
+    background-image: url(../../img/parts/arrow_bottom.png);
+}
+
+/* リスト(li, ol)
+-----------------------------------------------*/
+
+/* ----- 中央揃え ----- */
+.article__sequence-list--center {
+    margin: auto;
+}

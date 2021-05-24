@@ -1,0 +1,20 @@
+.contact {
+    padding: 1em;
+}
+
+.contact__head {
+    font-size: 1.5em;
+}
+
+.contact__head2 {
+    font-size: 1.3em;
+}
+
+.contact__paragraph {
+    margin: 1.5em 1.5em 1.5em .5em;
+}
+
+.contact__error-message {
+    margin: .5em 0 .5em 0;
+    color: red;
+}

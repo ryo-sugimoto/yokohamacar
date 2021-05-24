@@ -1,0 +1,20 @@
+.mail-magazine {
+    padding: 1em;
+}
+
+.mail-magazine__head {
+    font-size: 1.5em;
+}
+
+.mail-magazine__head2 {
+    font-size: 1.3em;
+}
+
+.mail-magazine__paragraph {
+    margin: 1.5em 1.5em 1.5em .5em;
+}
+
+.mail-magazine__error-message {
+    margin: .5em 0 .5em 0;
+    color: red;
+}

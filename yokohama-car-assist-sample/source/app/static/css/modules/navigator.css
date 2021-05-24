@@ -1,0 +1,55 @@
+/* =========================================================
+ ナビゲーター
+========================================================= */
+
+
+/* ~ 479px
+-----------------------------------------------*/
+@media screen and (max-width:479px) {
+
+    /* ナビゲーター
+    -----------------------------------------------*/
+    .navigator {
+        font-size: .8em;
+    }
+}
+
+/* 480px ~ 960px
+-----------------------------------------------*/
+@media screen and (min-width:480px) and (max-width: 960px) {
+
+    /* ナビゲーター
+    -----------------------------------------------*/
+    .navigator {
+        font-size: 1.1em;
+        letter-spacing: .1em;
+    }
+}
+
+/* 961px ~
+-----------------------------------------------*/
+@media screen and (min-width: 961px) {
+
+    /* ナビゲーター
+    -----------------------------------------------*/
+    .navigator {
+        font-size: 1.2em;
+        letter-spacing: .3em;
+    }
+}
+
+/* ナビゲーター 全ブレイクポイント共通
+-----------------------------------------------*/
+.navigator {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(../../img/navigator/luxury_frame.png);
+    background-size: contain;
+    height: 6em;
+}
+
+.navigator__link {
+    text-decoration: none;
+    color: black;
+}

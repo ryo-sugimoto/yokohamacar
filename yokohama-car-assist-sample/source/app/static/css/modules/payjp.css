@@ -1,0 +1,13 @@
+#payjp_checkout_box input[type=button] {
+    background: #F1C40F !important;
+    color: white !important;
+    border: none !important;
+    padding: .5em !important;
+    width: 12em !important;
+    font-weight: 500 !important;
+    font-size: 1em !important;
+    letter-spacing: .1em !important;
+    border-radius: 5px !important;
+    -webkit-appearance: none !important;
+    margin: 1em 0 0 0;
+}
